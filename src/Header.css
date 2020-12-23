@@ -1,0 +1,48 @@
+.header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-weight: 600;
+}
+.header__logo{
+    flex:0.2;
+}
+.header__logo__image{
+    height: 30px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.header__nav{
+    flex:1;
+    justify-self: right;
+}
+.header__menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.header__links{
+    text-decoration: none;
+    color: black;
+    padding:20px 20px;
+}
+.header__links:hover{
+    color:limegreen;
+}
+.header__signin{
+    cursor: pointer;
+    display: flex;
+    flex: 0.2;
+    align-items: center;
+}
+.header__signin>span:hover{
+    color:limegreen;
+}
+
+.header__signin1{
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid;
+    border-color:gray;
+}

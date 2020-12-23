@@ -1,6 +1,8 @@
 import './App.css';
 import Result from "./Result";
 import Polls from "./Polls";
+import Header from "./Header";
+
 import { BrowserRouter as Router,Switch,Route} from "react-router-dom";
 
 function App() {
@@ -12,7 +14,8 @@ function App() {
         <Result />
         </Route>
         <Route path="/">
-        <Polls />
+        <Header />
+        <Polls /> 
         </Route>
       </Switch>
       </Router>
