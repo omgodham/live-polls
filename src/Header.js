@@ -1,6 +1,7 @@
 import { Avatar } from '@material-ui/core';
 import React from 'react';
 import "./Header.css";
+import { Link } from "react-router-dom";
 function Header() {
     return (
         <div className="header">
@@ -9,7 +10,7 @@ function Header() {
             </div>
             <div className="header__nav">
             <ul className="header__menu">
-                <li><a href="" className="header__links">Home</a></li>
+                <Link to="/"><li><a href="" className="header__links">Home</a></li></Link>
                 <li><a href="" className="header__links">Categories</a></li>
                 <li><a href="" className="header__links">Posts by Reaction</a></li>
                 <li><a href="" className="header__links">Archive</a></li>

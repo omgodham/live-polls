@@ -12,12 +12,13 @@ function App() {
       <Router>
       <Switch>
         <Route path="/result">
+        <Header />
         <Result />
         </Route>
         <Route path="/">
         <Header />
         <Home />
-        {/* <Polls />  */}
+        <Polls /> 
         </Route>
       </Switch>
       </Router>

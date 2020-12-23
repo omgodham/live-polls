@@ -1,7 +1,43 @@
 .poll{
-    background-color: black;
-    color: white;
+    border: 1px solid lightgray;
+    color: black;
     padding: 20px;
-    text-align: center;
+    text-align: left;
+    background-color: white;
+}
+.poll__featured__btn{
+    padding:5px 10px;
+    border: none;
+    background-color:#12a898;
+    margin-right: 10px;
+    border-radius: 30px;
+    color: white;
+    
+}
+.poll__featured__btn:hover{
     cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #12a898;
+    font-weight: 500;
+    color: #12a898;
+    transition: all 0.1s ease;
+}
+.poll__viral__btn{
+    border-radius: 30px;
+    padding:5px 10px;
+    border: none;
+    background-color: #ff483a;
+    color: white;
+}
+.poll__viral__btn:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #ff483a;
+    font-weight: 500;
+    color:#ff483a ;
+    transition: all 0.1s ease;
+}
+.poll__heading{
+    color: black;
+    text-decoration: none;
 }
