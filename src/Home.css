@@ -1,0 +1,49 @@
+.home{
+    background-image: url("http://demo.themeton.com/pressgrid/wp-content/uploads/sites/73/2017/01/vienna-city.jpg");
+    color: white;
+    background: size 100;
+    height:90vh ;
+    width: 100%;
+    margin-top: 20px;
+}
+.home__content{
+    position: absolute;
+    bottom: 0;
+    padding:50px;
+    width: fit-content;
+}
+.featured__btn{
+    padding:8px 15px;
+    border: none;
+    background-color:#12a898;
+    margin-right: 10px;
+    border-radius: 30px;
+    color: white;
+    
+}
+.featured__btn:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #12a898;
+    font-weight: 800;
+    transition: all 0.1s ease;
+}
+.viral__btn{
+    border-radius: 30px;
+    padding:8px 15px;
+    border: none;
+    background-color: #ff483a;
+    color: white;
+}
+.viral__btn:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #ff483a;
+    font-weight: 800;
+    transition: all 0.1s ease;
+}
+
+.home__content >p{
+    font-weight: 500;
+    font-size: 1.2rem;
+}

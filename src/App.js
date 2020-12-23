@@ -2,6 +2,7 @@ import './App.css';
 import Result from "./Result";
 import Polls from "./Polls";
 import Header from "./Header";
+import Home from "./Home";
 
 import { BrowserRouter as Router,Switch,Route} from "react-router-dom";
 
@@ -15,7 +16,8 @@ function App() {
         </Route>
         <Route path="/">
         <Header />
-        <Polls /> 
+        <Home />
+        {/* <Polls />  */}
         </Route>
       </Switch>
       </Router>

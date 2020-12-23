@@ -6,6 +6,7 @@
 }
 .header__logo{
     flex:0.2;
+    margin-left: 20px;
 }
 .header__logo__image{
     height: 30px;
