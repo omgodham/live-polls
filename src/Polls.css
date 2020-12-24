@@ -1,6 +1,4 @@
 .polls{
-    margin-top: 30px;
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(3,auto);
     grid-column-gap: 20px;

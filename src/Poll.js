@@ -18,13 +18,9 @@ export default function Poll({id,title}) {
    
     return (
 
-        <div className="poll" >
-                <div className="poll__buttons">
-        <button className="poll__featured__btn">FEATURED</button>
-        <button className="poll__viral__btn">VIRAL</button>
-        </div>
-               <Link to="/result"><h1 className="poll__heading" onClick={addToArray} >{title}</h1></Link>
+        <Link to="/result"><div className="poll" onClick={addToArray}>
+                <h1>{title + " " + id}</h1>
                 <p>This is the poll live This is the poll live This is the poll live</p>
-        </div>
+        </div></Link>
     )
 }
