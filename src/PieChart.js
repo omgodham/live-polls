@@ -24,7 +24,7 @@ const [channels,setChannels]= useState([]);
 
   useEffect(() => {
     setChannels(array.data.options);
-    console.log(channels);
+    // console.log(channels);
   },[]);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ const [channels,setChannels]= useState([]);
     if(title != 'global')
     setSubArray(currentArray[value]);
     else
-    setSubArray(currentArray[Object.keys(currentArray)[0]]);
+    setSubArray(currentArray);
     console.log(value);
   },[value]);
   // console.log("after");
