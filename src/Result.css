@@ -1,4 +1,19 @@
+.result{
+    width: 100%;
+}
+.result h1,h2{
+padding-left: 20px;
+}
 .result__piecharts{
     display: grid;
     grid-template-columns: auto auto;
+    width: 100%;
+}
+
+@media screen and (max-width:785px){
+    .result__piecharts{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+    }
 }

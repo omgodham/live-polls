@@ -5,8 +5,7 @@ import { useStateValue } from "./StateProvider";
 
 export default function PieChart({ title }) {
   const [{ array }, dispatch] = useStateValue();
-  // const channels = array.data.options;
-const [channels,setChannels]= useState([]);
+  const [channels, setChannels] = useState([]);
   var dropDownOptions = [];
   var currentArray = {};
 
@@ -18,58 +17,30 @@ const [channels,setChannels]= useState([]);
     dropDownOptions = [];
   }
 
-  // var subArray = {};
-  const [subArray,setSubArray] = useState({});
-  const [value,setValue]=useState(`${dropDownOptions[0]}`);
+  const [subArray, setSubArray] = useState({});
+  const [value, setValue] = useState(`${dropDownOptions[0]}`);
 
   useEffect(() => {
     setChannels(array.data.options);
-    // console.log(channels);
-  },[]);
+  }, []);
 
   useEffect(() => {
-    // subArray = currentArray[value];
-    if(title != 'global')
-    setSubArray(currentArray[value]);
-    else
-    setSubArray(currentArray);
+    if (title != "global") setSubArray(currentArray[value]);
+    else setSubArray(currentArray);
     console.log(value);
-  },[value]);
-  // console.log("after");
-
-
+  }, [value]);
 
   function handleChange(event) {
-    // value = event.target.value;
     setValue(event.target.value);
-    // console.log(value);
-    // subArray = currentArray[value];
-    // console.log(subArray);
-    // data[0] = ["Name Of Channel", "Public Voting"];
-    // for (var i = 0; i < Object.keys(channels).length; i++) {
-    //   data[i + 1] = [channels[i], subArray[i]];
-    // }
-    // console.log(data);
   }
 
-  // if(title!='global')
-  // subArray = currentArray[Object.keys(currentArray)[0]];
-  // // else
-  // subArray =currentArray;
-   var data = [];
+  var data = [];
 
-  // subArray = currentArray[value];
   console.log(subArray);
   data[0] = ["Name Of Channel", "Public Voting"];
   for (var i = 0; i < Object.keys(channels).length; i++) {
     data[i + 1] = [channels[i], subArray[i]];
   }
-
-  // data[0] = ["Name Of Channel", "Public Voting"];
-  // for (var i = 0; i < Object.keys(channels).length; i++) {
-  //   data[i + 1] = [channels[i], subArray[i]];
-  // }
-
 
   var options = {
     title: "",
@@ -78,19 +49,18 @@ const [channels,setChannels]= useState([]);
   };
 
   return (
-    <div>
+    <div className="pie__charts">
       <h4>{title}</h4>
 
-      <select onChange={handleChange}>
+      <select onChange={handleChange} className="dropdown">
         {dropDownOptions.map((item) => {
           return <option>{item}</option>;
         })}
       </select>
 
       <Chart
+        className="chart"
         chartType="PieChart"
-        width="100%"
-        height="400px"
         data={data}
         options={options}
       />
