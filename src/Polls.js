@@ -5,16 +5,16 @@ import instance from "./axios";
 export default function Polls() {
 
     const [polls,setPolls]=useState([]);
-    // const fetchUrl="/intern";
+    
     useEffect( () => {
          async function getData(){
                const request= await instance.get('/intern');
-            //    console.log(request.data.payload);
-               setPolls(request.data.payload); 
-               return request;
+              setPolls(request.data.payload);
+               // return request;
          }
          getData();
     },[]);
+
 
     return (
         <div className="polls">

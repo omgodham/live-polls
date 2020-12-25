@@ -17,7 +17,7 @@ function App() {
         <Route path="/">
         <Header />
         <Home />
-        {/* <Polls />  */}
+        <Polls /> 
         </Route>
       </Switch>
       </Router>

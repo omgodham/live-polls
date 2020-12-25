@@ -1,17 +1,17 @@
 
 export const initialState = {
-    array: [],
+    array: {},
   };
   
   
   const reducer = (state, action) => {
-    console.log(action);
     switch (action.type) {
-        case "ADD_TO_ARRAY":
-            return {
-                ...state,
-                array:[...state.array,action.item]
-            }
+        case "ADD_TO_ARRAY":{
+          return {
+                array:action.item
+            }    
+          }
+ 
       default:
         return state;
     }
