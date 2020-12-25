@@ -4,6 +4,7 @@ import "./Header.css";
 function Header() {
     return (
         <div className="header">
+            <div className="header__content">
             <div className="heaeder__logo">
             <img className="header__logo__image" src="http://demo.themeton.com/pressgrid/wp-content/uploads/sites/73/2017/01/logo.png"/>
             </div>
@@ -21,6 +22,7 @@ function Header() {
             <Avatar src="http://demo.themeton.com/pressgrid/wp-content/themes/press-grid/images/user.png" />
             <span className="header__signin1"> sign in</span>
             <span> sign up</span>
+            </div>
             </div>
         </div>
     )

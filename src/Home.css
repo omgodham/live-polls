@@ -4,7 +4,7 @@
     background: size 100;
     height:90vh ;
     width: 100%;
-    margin-top: 20px;
+    
 }
 .home__content{
     position: absolute;
@@ -46,4 +46,17 @@
 .home__content >p{
     font-weight: 500;
     font-size: 1.2rem;
+}
+
+@media screen and (max-width:356px){
+    .home__content{
+        padding-bottom: 0;
+    }
+    .home__buttons{
+        display:grid;
+        width: 70%;
+    }
+    .featured__btn{
+        margin-bottom: 10px;
+    }
 }
